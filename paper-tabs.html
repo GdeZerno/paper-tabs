@@ -115,6 +115,10 @@ Custom property | Description | Default
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
         -webkit-tap-highlight-color: transparent;
 
+        --paper-icon-button_-_width: 48px;
+        --paper-icon-button_-_height: 48px;
+        --paper-icon-button_-_padding: 12px;
+
         @apply --paper-tabs;
       }
 
@@ -170,9 +174,11 @@ Custom property | Description | Default
       }
 
       paper-icon-button {
-        width: 48px;
-        height: 48px;
-        padding: 12px;
+        /*width: 48px;*/
+        /*height: 48px;*/
+        width: var(--paper-icon-button_-_width);
+        height: var(--paper-icon-button_-_height);
+        padding: var(--paper-icon-button_-_padding);
         margin: 0 4px;
       }
 
